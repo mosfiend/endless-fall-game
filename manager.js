@@ -1,5 +1,4 @@
 import * as PIXI from "pixi.js";
-import Matter from 'matter-js';
 
 export class Manager {
     constructor() {
@@ -50,11 +49,6 @@ export class Manager {
         Manager.currentScene.transitionIn()
     }
 
-    static createPhysics() {
-        Manager.physics = Matter.Engine.create();
-        const runner = Matter.Runner.create();
-        Matter.Runner.run(runner, Manager.physics);
-    }
 
     static update(deltaTime) {
         // Group.shared.update(); For your tweens
