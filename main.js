@@ -1,7 +1,7 @@
-import './style.css'
-import { Manager } from './manager.js'
-import { LoaderScene } from './scenes/LoaderScene';
+import "./style.css";
+import { Master } from "./master/master.js";
+import { LoaderScene } from "./master/LoaderScene";
 
-Manager.initialize(800, 600, 0x2E3037);
+Master.initialize(800, 600, 0x2e3037);
 const loader = new LoaderScene();
-Manager.changeScene(loader);
+Master.changeScene(loader);
